@@ -22,7 +22,6 @@ m_str parser(FILE* filePtr){
     int buffSize = 1024;
     char* buff = malloc(buffSize*sizeof(char));
     int len = 0;
-    //int n = fread(buff, sizeof(char),buffSize,filePtr);
     int n;
     do{
         n = fread(buff+len, sizeof(char), buffSize-len, filePtr);
@@ -34,7 +33,7 @@ m_str parser(FILE* filePtr){
         }
     }while(n!=0);
 
-    return (m_str){buff, (int)len};
+    return (m_str){buff, len};
 }
 
 
