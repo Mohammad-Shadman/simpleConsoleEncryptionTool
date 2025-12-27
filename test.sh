@@ -9,4 +9,4 @@ rm keyAsABCDEncrypted.txt
 ./encrypter.exe main.c -i ABCD  keyAsABCDEncrypted.txt
 ./encrypter.exe keyAsABCDEncrypted.txt -i ABCD  keyAsABCD-Dencrypted.txt
 ./encrypter.exe keyFileEncrypted.txt -f key  keyFileDecrypted.txt
-sleep 5
+sleep 60
