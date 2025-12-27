@@ -3,8 +3,8 @@ lets the user encrypt and decrypt using a key entered through the command argume
 
 Proper use:
 
-                Input the file to encrypt/decrypt, fileToRead
-                The type of key to use(-f file -i input) followed by the key, -i keyInput (or) -f keyFile
+                Input the file to encrypt/decrypt, fileToRead.
+                The type of key to use(-f file -i input) followed by the key, -i keyInput (or) -f keyFile.
                 The output name of the encrypted/decrypted file.
                 
                 *optional*
@@ -14,8 +14,8 @@ Proper use:
                
                
                 Usage:
-                encrypter fileToRead -i keyInput outPutFile or
-                encrypter fileToRead -f keyFile outPutFile or
+                encrypter fileToRead -i keyInput outPutFile         or
+                encrypter fileToRead -f keyFile outPutFile          or
                 encrypter fileToRead -f keyFile fileToRead -r
 
 
