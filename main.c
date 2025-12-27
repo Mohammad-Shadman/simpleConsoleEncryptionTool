@@ -41,9 +41,12 @@ m_str parser(FILE* filePtr){
 int main(int argc, char** argv) {
     if(argc !=5){
         printf("Proper use:\n"
-               "input the file to encrypt/decrypt, \n"
-               "the type of key to use(-f file -i input) followed by the key, \n"
-               "the output name of the encrypted/decrypted file\n"
+               "Input the file to encrypt/decrypt, fileToRead \n"
+               "The type of key to use(-f file -i input) followed by the key, -i keyInput (or) -f keyFile\n"
+               "The output name of the encrypted/decrypted file.\n"
+               "Usage:\n"
+               "encrypter fileToRead -i keyInput outPutFile\nor\n"
+               "encrypter fileToRead -f keyFile outPutFile\n"
               );
         return 0;
     }
@@ -72,6 +75,7 @@ int main(int argc, char** argv) {
         FILE *keyFile = fopen(argv[3],"r");
     
         if(keyFile == NULL)
+            printf("\"%s\" is an invalid file, recheck the name of the file and ensure it's existance, then retry\n",argv[3]);
             exit(2);
 
         key = parser(keyFile);
