@@ -8,3 +8,6 @@ Proper use:
                Usage:\n
                encrypter fileToRead -i keyInput outPutFile\nor\n
                encrypter fileToRead -f keyFile outPutFile\n
+
+
+intended purpose is to encrypt and decrypt simply and easly through the command line while also being flexible with it's use
