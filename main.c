@@ -103,6 +103,9 @@ int main(int argc, char** argv) {
         printf("\"%s\" is not a valid key type: -f , -i\n",argv[2]);
         exit(2);
     }
+    if (key.len % 2 == 0 && key.len >= 2){
+        key.str[0]+=key.str[key.len-1];
+    }
 
     
     m_str buff = parser(filePtr);
