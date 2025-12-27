@@ -16,7 +16,7 @@ Proper use:
                 Usage:
                 encrypter fileToRead -i keyInput outPutFile or
                 encrypter fileToRead -f keyFile outPutFile or
-                encrypter fileToRead -f keyFile fileToRead -r or
+                encrypter fileToRead -f keyFile fileToRead -r
 
 
 intended purpose is to encrypt and decrypt simply and easly through the command line while also being flexible with it's use
